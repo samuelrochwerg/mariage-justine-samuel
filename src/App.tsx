@@ -4,23 +4,24 @@ import { Heart, MapPin, Calendar, Home, Users, Gift } from 'lucide-react';
 
 // Homepage Component
 const HomePage = ({ navigate }: { navigate: (path: string) => void }) => (
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
     <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 items-center">
         {/* Left side - Text content */}
-        <div className="text-center lg:text-left order-2 lg:order-1">
-          <div className="flex items-center justify-center lg:justify-start mb-4 sm:mb-6">
+        <div className="text-center order-2 lg:order-1 lg:pr-8">
+          <div className="flex items-center justify-center mb-4 sm:mb-6">
             <Heart className="w-8 h-8 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-red-500 mr-2 sm:mr-4" />
             <h1 className="text-3xl sm:text-4xl lg:text-5xl text-blue-900">Justine & Samuel</h1>
           </div>
           <p className="text-lg sm:text-xl lg:text-2xl text-red-600 mb-6 sm:mb-8">Célébrons ensemble l'amour</p>
-          <div className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-blue-900 mb-2 sm:mb-4 tracking-wider">06/05/2026</h2>
           </div>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
-            C'est avec une immense joie que nous vous invitons à célébrer notre mariage.
+            C'est avec une immense joie que nous vous invitons<br />
+            à célébrer notre mariage.
           </p>
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <button
               onClick={() => navigate('/presence')}
               className="bg-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-red-600 transition-colors shadow-lg text-base sm:text-lg w-full sm:w-auto"
@@ -31,13 +32,15 @@ const HomePage = ({ navigate }: { navigate: (path: string) => void }) => (
         </div>
         
         {/* Right side - Photo */}
-        <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-          <img 
-            src="/image.png" 
-            alt="Justine et Samuel - Photo de fiançailles" 
-            className="w-full max-w-sm sm:max-w-md lg:w-auto lg:h-auto lg:max-h-96 rounded-2xl sm:rounded-3xl shadow-lg"
-            style={{ borderRadius: '16px' }}
-          />
+        <div className="flex justify-center order-1 lg:order-2">
+          <div className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[360px]">
+            <img 
+              src="/image.png" 
+              alt="Justine et Samuel - Photo de fiançailles" 
+              className="w-full h-auto rounded-2xl sm:rounded-3xl shadow-lg"
+              style={{ borderRadius: '16px' }}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -162,14 +165,14 @@ const InfosPratiques = () => (
 
       {/* Jeudi 7 Mai */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-        <div className="bg-green-600 text-white p-6">
+        <div className="bg-blue-900 text-white p-6">
           <h3 className="text-2xl font-serif text-center">Jeudi 7 Mai 2026</h3>
         </div>
         <div className="p-8">
           <div className="space-y-6">
             <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
-                <span className="text-green-100">∞</span>
+              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                <span className="text-red-100">∞</span>
               </div>
               <div>
                 <h4 className="text-xl font-serif text-blue-900 mb-2">Chill dans le domaine</h4>
@@ -178,7 +181,7 @@ const InfosPratiques = () => (
             </div>
             
             <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
                 12:00
               </div>
               <div>
@@ -188,7 +191,7 @@ const InfosPratiques = () => (
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
                 20:00
               </div>
               <div>
@@ -202,13 +205,13 @@ const InfosPratiques = () => (
 
       {/* Vendredi 8 Mai */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-purple-600 text-white p-6">
+        <div className="bg-blue-900 text-white p-6">
           <h3 className="text-2xl font-serif text-center">Vendredi 8 Mai 2026</h3>
         </div>
         <div className="p-8">
           <div className="flex items-start space-x-4">
-            <div className="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
-              <span className="text-purple-100">🏠</span>
+            <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
+              <span className="text-red-100">🏠</span>
             </div>
             <div>
               <h4 className="text-xl font-serif text-blue-900 mb-2">Départ du domaine</h4>
@@ -358,13 +361,14 @@ const Hebergement = () => (
     <p className="text-lg text-gray-700 text-center mb-12">
       Le Hameau de Valouse dispose de 100 couchages.
       <br /><br />
-      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 100 euros par personne pour les deux nuits.
+      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 120 euros par personne pour les deux nuits.
       <br /><br />
       Pas de participation demandée pour les enfants !
       <br /><br />
       Nous reviendrons vers vous pour l'organisation des couchages, mais tout le monde bénéficiera d'un confort agréable pour profiter des festivités comme il se doit.
     </p>
     
+
 
   </div>
 );
@@ -478,7 +482,7 @@ const PolitiqueConfidentialite = () => (
             Téléphone : 06 43 86 13 60
           </p>
           <p className="text-gray-700 mt-2">
-            <strong>Justine Benhamou Pianna</strong><br />
+            <strong>Justine Benhamou Piana</strong><br />
             Email : justine.benhamou@gmail.com<br />
             Téléphone : 07 68 90 67 87
           </p>
@@ -568,7 +572,7 @@ const ConditionsGenerales = () => (
             Téléphone : 06 43 86 13 60
           </p>
           <p className="text-gray-700 mt-2">
-            <strong>Justine Benhamou Pianna</strong><br />
+            <strong>Justine Benhamou Piana</strong><br />
             Email : justine.benhamou@gmail.com<br />
             Téléphone : 07 68 90 67 87
           </p>
@@ -682,7 +686,7 @@ function App() {
                   <p className="text-blue-200">samuelrochwerg1@gmail.com</p>
                 </div>
                 <div>
-                  <p className="font-medium">Justine Benhamou Pianna</p>
+                  <p className="font-medium">Justine Benhamou Piana</p>
                   <p className="text-blue-200">07 68 90 67 87</p>
                   <p className="text-blue-200">justine.benhamou@gmail.com</p>
                 </div>
