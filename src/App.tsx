@@ -361,9 +361,7 @@ const Hebergement = () => (
       Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 100 euros par personne pour les deux nuits.
       <br /><br />
       Pas de participation demandée pour les enfants !
-    </p>
-    
-    <p className="text-lg text-gray-700 text-center mb-8">
+      <br /><br />
       Nous reviendrons vers vous pour l'organisation des couchages, mais tout le monde bénéficiera d'un confort agréable pour profiter des festivités comme il se doit.
     </p>
     
@@ -673,7 +671,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 lg:grid-cols-2 lg:max-w-4xl lg:mx-auto">
             {/* Contact Info */}
             <div>
               <h3 className="text-xl font-serif mb-4">Contacts</h3>
