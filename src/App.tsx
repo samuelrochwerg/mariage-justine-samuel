@@ -359,24 +359,45 @@ const Hebergement = () => (
   <div className="max-w-4xl mx-auto">
     <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Hébergement</h1>
     <p className="text-lg text-gray-700 text-center mb-12">
-      Le Hameau de Valouse dispose de 100 couchages.
+      Le Hameau de Valouse dispose de 100 couchages 🛏️
       <br /><br />
-      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 120 euros par adulte pour les deux nuits.
+      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 120 euros par adulte pour les deux nuits 🚀
       <br /><br />
-      Pas de participation demandée pour les enfants !
+      Pas de participation demandée pour les enfants ! 👶
       <br /><br />
-      Cela permettra à chacun de profiter pleinement du mariage sans se soucier des trajets.
+      Vous pouvez régler la participation à l'hébergement par virement :
       <br /><br />
-      Nous reviendrons vers vous rapidement avec les détails et pour organiser les chambres au mieux. 🛏️✨
+      <div className="flex justify-center mt-6 mb-6">
+        <img 
+          src="/rib.jpg.png" 
+          alt="RIB - Relevé d'Identité Bancaire" 
+          className="max-w-full h-auto rounded-lg shadow-lg"
+          style={{ maxHeight: '400px' }}
+        />
+      </div>
+      <br />
+      Titulaire du compte : MLLE BENHAMOU JUSTINE
       <br /><br />
-      Afin de simplifier l'organisation, nous vous proposerons un lien de paiement sécurisé ci-dessous.
+      IBAN : FR76 1131 5000 0104 6134 2437 301
+      <br /><br />
+      BIC : CEPAFRPP131
+      <br /><br />
+      RIB :
+      <br />
+      Code Banque : 11315
+      <br />
+      Code Guichet : 00001
+      <br />
+      N° du compte : 04613424373
+      <br />
+      Clé RIB : 01
+      <br /><br />
+      Banque : Caisse d'Épargne – Agence de Bollène
+      <br />
+      (Merci d'indiquer votre nom dans le libellé du virement 💌)
     </p>
     
-    <div className="text-center">
-      <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
-        Payer ma participation
-      </button>
-    </div>
+
     
 
 
