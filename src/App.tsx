@@ -361,12 +361,22 @@ const Hebergement = () => (
     <p className="text-lg text-gray-700 text-center mb-12">
       Le Hameau de Valouse dispose de 100 couchages.
       <br /><br />
-      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 120 euros par personne pour les deux nuits.
+      Nous pourrons donc normalement héberger la totalité de nos invités sur place, moyennnant une participation de 120 euros par adulte pour les deux nuits.
       <br /><br />
       Pas de participation demandée pour les enfants !
       <br /><br />
-      Nous reviendrons vers vous pour l'organisation des couchages, mais tout le monde bénéficiera d'un confort agréable pour profiter des festivités comme il se doit.
+      Cela permettra à chacun de profiter pleinement du mariage sans se soucier des trajets.
+      <br /><br />
+      Nous reviendrons vers vous rapidement avec les détails et pour organiser les chambres au mieux. 🛏️✨
+      <br /><br />
+      Afin de simplifier l'organisation, nous vous proposerons un lien de paiement sécurisé ci-dessous.
     </p>
+    
+    <div className="text-center">
+      <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
+        Payer ma participation
+      </button>
+    </div>
     
 
 
