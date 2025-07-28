@@ -10,12 +10,12 @@ const HomePage = ({ navigate }: { navigate: (path: string) => void }) => (
         {/* Left side - Text content */}
         <div className="text-center order-2 lg:order-1 lg:pr-8">
           <div className="flex items-center justify-center mb-4 sm:mb-6">
-            <Heart className="w-8 h-8 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-red-500 mr-2 sm:mr-4" />
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl text-blue-900">Justine & Samuel</h1>
+            <Heart className="w-8 h-8 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mr-2 sm:mr-4" style={{ color: '#c81315' }} />
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl" style={{ color: '#723d46' }}>Justine & Samuel</h1>
           </div>
-          <p className="text-lg sm:text-xl lg:text-2xl text-red-600 mb-6 sm:mb-8">Célébrons ensemble l'amour</p>
+          <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8" style={{ color: '#c81315' }}>Célébrons ensemble l'amour</p>
           <div className="mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-blue-900 mb-2 sm:mb-4 tracking-wider">06/05/2026</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-2 sm:mb-4 tracking-wider" style={{ color: '#723d46' }}>06/05/2026</h2>
           </div>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
             C'est avec une immense joie que nous vous invitons<br />
@@ -24,7 +24,8 @@ const HomePage = ({ navigate }: { navigate: (path: string) => void }) => (
           <div className="text-center">
             <button
               onClick={() => navigate('/presence')}
-              className="bg-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-red-600 transition-colors shadow-lg text-base sm:text-lg w-full sm:w-auto"
+              className="text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium transition-colors shadow-lg text-base sm:text-lg w-full sm:w-auto"
+              style={{ backgroundColor: '#723d46' }}
             >
               Je confirme ma présence
             </button>
@@ -50,11 +51,11 @@ const HomePage = ({ navigate }: { navigate: (path: string) => void }) => (
 // Infos Pratiques Component
 const InfosPratiques = () => (
   <div className="max-w-4xl mx-auto">
-    <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Informations pratiques</h1>
+    <h1 className="text-4xl font-serif text-center mb-12" style={{ color: '#723d46' }}>Informations pratiques</h1>
     <div className="grid md:grid-cols-2 gap-8">
       <div className="bg-white p-8 rounded-lg shadow-lg">
-        <MapPin className="w-8 h-8 text-red-500 mb-4" />
-        <h3 className="text-2xl font-serif text-blue-900 mb-4">Lieu et dates du mariage</h3>
+        <MapPin className="w-8 h-8 mb-4" style={{ color: '#c81315' }} />
+        <h3 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>Lieu et dates du mariage</h3>
         <p className="text-gray-700 mb-2"><strong>Hameau de Valouse - Grange Basse</strong></p>
         <p className="text-gray-600 mb-2">26110 Valouse, France</p>
         <p className="text-gray-700 text-xl font-medium mb-4">Du 06 au 08 mai 2026</p>
@@ -79,16 +80,16 @@ const InfosPratiques = () => (
       </div>
       
       <div className="bg-white p-8 rounded-lg shadow-lg">
-        <MapPin className="w-8 h-8 text-red-500 mb-4" />
-        <h3 className="text-2xl font-serif text-blue-900 mb-4">Comment venir ?</h3>
+        <MapPin className="w-8 h-8 mb-4" style={{ color: '#c81315' }} />
+        <h3 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>Comment venir ?</h3>
         <div className="space-y-6">
           <div>
-            <h4 className="text-lg font-serif text-blue-900 mb-2">🚂 En train</h4>
+            <h4 className="text-lg font-serif mb-2" style={{ color: '#723d46' }}>🚂 En train</h4>
             <p className="text-gray-700 mb-2">Gares TGV les plus proches : <strong>Avignon TGV</strong> ou <strong>Montélimar TGV</strong>.</p>
             <p className="text-gray-600">Puis 1 heure de route en voiture.</p>
           </div>
           <div>
-            <h4 className="text-lg font-serif text-blue-900 mb-2">🚗 En voiture</h4>
+            <h4 className="text-lg font-serif mb-2" style={{ color: '#723d46' }}>🚗 En voiture</h4>
             <div className="space-y-1 text-gray-700">
               <p><strong>1h15</strong> depuis Piolenc</p>
               <p><strong>5h30</strong> depuis Barcelone</p>
@@ -101,61 +102,61 @@ const InfosPratiques = () => (
     
     {/* Programme du mariage */}
     <div className="mt-12">
-      <h2 className="text-3xl font-serif text-blue-900 text-center mb-8">Programme du mariage</h2>
+      <h2 className="text-3xl font-serif text-center mb-8" style={{ color: '#723d46' }}>Programme du mariage</h2>
       
       {/* Mercredi 6 Mai */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-        <div className="bg-blue-900 text-white p-6">
+        <div className="text-white p-6" style={{ backgroundColor: '#723d46' }}>
           <h3 className="text-2xl font-serif text-center">Mercredi 6 Mai 2026</h3>
         </div>
         <div className="p-8">
           <div className="space-y-6">
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 15:00
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Accueil des invités</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Accueil des invités</h4>
                 <p className="text-gray-700">Rassemblement au Hameau de Valouse pour un premier moment de convivialité.</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 17:00
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Cérémonie laïque</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Cérémonie laïque</h4>
                 <p className="text-gray-700">Échange des vœux à la Grange Basse, en présence de nos familles et amis.</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 18:30
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Cocktail</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Cocktail</h4>
                 <p className="text-gray-700">Moment de détente avec cocktail dans les espaces extérieurs.</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 20:30
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Dîner de mariage</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Dîner de mariage</h4>
                 <p className="text-gray-700">Repas gastronomique servi dans la grande salle de réception.</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 23:30
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Fiesta</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Fiesta</h4>
                 <p className="text-gray-700">Soirée dansante pour célébrer notre union !</p>
               </div>
             </div>
@@ -165,37 +166,37 @@ const InfosPratiques = () => (
 
       {/* Jeudi 7 Mai */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-        <div className="bg-blue-900 text-white p-6">
+        <div className="text-white p-6" style={{ backgroundColor: '#723d46' }}>
           <h3 className="text-2xl font-serif text-center">Jeudi 7 Mai 2026</h3>
         </div>
         <div className="p-8">
           <div className="space-y-6">
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
-                <span className="text-red-100">∞</span>
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
+                <span className="text-lg sm:text-base" style={{ color: '#f8d7d7' }}>∞</span>
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Chill dans le domaine</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Chill dans le domaine</h4>
                 <p className="text-gray-700">Piscine, ping pong, jeux de cartes - Profitez des installations du domaine !</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4 pb-4 border-b border-gray-200">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4 pb-4 border-b border-gray-200">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 12:00
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Brunch</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Brunch</h4>
                 <p className="text-gray-700">Brunch convivial pour se remettre de la veille.</p>
               </div>
             </div>
             
-            <div className="flex items-start space-x-4">
-              <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-sm">
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
                 20:00
               </div>
               <div>
-                <h4 className="text-xl font-serif text-blue-900 mb-2">Food truck</h4>
+                <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Food truck</h4>
                 <p className="text-gray-700">Dîner décontracté avec un food truck sur place.</p>
               </div>
             </div>
@@ -205,17 +206,17 @@ const InfosPratiques = () => (
 
       {/* Vendredi 8 Mai */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-blue-900 text-white p-6">
+        <div className="text-white p-6" style={{ backgroundColor: '#723d46' }}>
           <h3 className="text-2xl font-serif text-center">Vendredi 8 Mai 2026</h3>
         </div>
         <div className="p-8">
-          <div className="flex items-start space-x-4">
-            <div className="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center">
-              <span className="text-red-100">🏠</span>
+          <div className="flex items-start space-x-3 sm:space-x-4">
+            <div className="text-white rounded-full w-14 h-14 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-sm flex-shrink-0" style={{ backgroundColor: '#c81315' }}>
+              10:00
             </div>
             <div>
-              <h4 className="text-xl font-serif text-blue-900 mb-2">Départ du domaine</h4>
-              <p className="text-gray-700">Fin des festivités - Départ entre 10h et 11h.</p>
+              <h4 className="text-lg sm:text-xl font-serif mb-2" style={{ color: '#723d46' }}>Fin des festivités</h4>
+              <p className="text-gray-700">Départ du domaine à 11h.</p>
             </div>
           </div>
         </div>
@@ -235,11 +236,11 @@ const Presence = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Confirmer votre présence</h1>
+      <h1 className="text-4xl font-serif text-center mb-12" style={{ color: '#723d46' }}>Confirmer votre présence</h1>
       
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <div className="text-center mb-8">
-          <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
+          <Heart className="w-12 h-12 mx-auto mb-4" style={{ color: '#c81315' }} />
           <p className="text-lg text-gray-700">
             Merci de confirmer votre présence avant le 31 janvier 2026.
           </p>
@@ -342,8 +343,9 @@ const Presence = () => {
               className={`px-8 py-3 rounded-lg font-medium transition-colors shadow-lg ${
                 isSubmitted 
                   ? 'bg-green-600 text-white cursor-not-allowed' 
-                  : 'bg-blue-600 text-white hover:bg-blue-700'
+                  : 'text-white'
               }`}
+              style={!isSubmitted ? { backgroundColor: '#723d46' } : {}}
             >
               {isSubmitted ? 'Votre confirmation a bien été envoyée' : 'Confirmer ma présence'}
             </button>
@@ -357,7 +359,7 @@ const Presence = () => {
 // Hebergement Component
 const Hebergement = () => (
   <div className="max-w-4xl mx-auto">
-    <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Hébergement</h1>
+    <h1 className="text-4xl font-serif text-center mb-12" style={{ color: '#723d46' }}>Hébergement</h1>
     <p className="text-lg text-gray-700 text-center mb-12">
       Le Hameau de Valouse dispose de 100 couchages 🛏️
       <br /><br />
@@ -407,35 +409,36 @@ const Hebergement = () => (
 // Cagnotte Component
 const Cagnotte = () => (
   <div className="max-w-4xl mx-auto text-center">
-    <h1 className="text-4xl font-serif text-blue-900 mb-12">Cagnotte de mariage</h1>
+    <h1 className="text-4xl font-serif mb-12" style={{ color: '#723d46' }}>Cagnotte de mariage</h1>
     
     <div className="bg-white p-12 rounded-lg shadow-lg mb-8">
-      <Gift className="w-16 h-16 text-red-500 mx-auto mb-6" />
-      <h2 className="text-3xl font-serif text-blue-900 mb-6">Votre présence est le plus beau des cadeaux</h2>
+              <Gift className="w-16 h-16 mx-auto mb-6" style={{ color: '#c81315' }} />
+      <h2 className="text-3xl font-serif mb-6" style={{ color: '#723d46' }}>Votre présence est le plus beau des cadeaux</h2>
       <p className="text-lg text-gray-700 mb-8 leading-relaxed">
         Si toutefois vous souhaitiez nous faire plaisir, nous avons créé une cagnotte 
         qui nous aidera notamment à réaliser notre voyage de noces.
       </p>
       
-      <div className="bg-red-50 p-8 rounded-lg mb-8">
-        <h3 className="text-2xl font-serif text-blue-900 mb-4">Comment participer ?</h3>
+              <div className="p-8 rounded-lg mb-8" style={{ backgroundColor: '#fdf2f2' }}>
+        <h3 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>Comment participer ?</h3>
         <p className="text-gray-700 mb-4">
           Nous avons créé une cagnotte en ligne pour faciliter votre participation.
         </p>
         <div className="text-center">
-          <a 
-            href="https://www.millemercismariage.com/samuel-justine/liste.html" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg"
-          >
-            Accéder à notre cagnotte
-          </a>
+                      <a 
+              href="https://www.millemercismariage.com/samuel-justine/liste.html" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg"
+              style={{ backgroundColor: '#723d46' }}
+            >
+              Accéder à notre cagnotte
+            </a>
         </div>
       </div>
       
       <div className="bg-blue-50 p-8 rounded-lg">
-        <h3 className="text-2xl font-serif text-blue-900 mb-4">Notre projet</h3>
+        <h3 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>Notre projet</h3>
         <p className="text-gray-700 mb-4">
           Nous rêvons de partir à l'île Maurice pour notre voyage de noces : plages de sable blanc, lagons turquoise, nature luxuriante et douceur de vivre… Un cadre idyllique pour débuter notre vie de couple marié.
         </p>
@@ -452,7 +455,7 @@ const Cagnotte = () => (
 // Politique de confidentialité Component
 const PolitiqueConfidentialite = () => (
   <div className="max-w-4xl mx-auto">
-    <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Politique de confidentialité</h1>
+    <h1 className="text-4xl font-serif text-center mb-12" style={{ color: '#723d46' }}>Politique de confidentialité</h1>
     
     <div className="bg-white p-8 rounded-lg shadow-lg">
       <div className="prose prose-lg max-w-none">
@@ -460,13 +463,13 @@ const PolitiqueConfidentialite = () => (
           Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">1. Collecte des informations</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>1. Collecte des informations</h2>
         <p className="text-gray-700 mb-6">
           Nous collectons les informations que vous nous fournissez directement, notamment lors de la confirmation de votre présence à notre mariage. 
           Ces informations incluent votre nom, prénom, adresse e-mail, adresse postale et message optionnel.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">2. Utilisation des informations</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>2. Utilisation des informations</h2>
         <p className="text-gray-700 mb-6">
           Les informations collectées sont utilisées exclusivement pour :
         </p>
@@ -477,19 +480,19 @@ const PolitiqueConfidentialite = () => (
           <li>Vous envoyer des informations pratiques sur le mariage</li>
         </ul>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">3. Protection des données</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>3. Protection des données</h2>
         <p className="text-gray-700 mb-6">
           Vos données personnelles sont protégées et ne seront jamais vendues, louées ou partagées avec des tiers, 
           sauf si la loi l'exige ou si vous nous donnez votre consentement explicite.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">4. Conservation des données</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>4. Conservation des données</h2>
         <p className="text-gray-700 mb-6">
           Vos données seront conservées jusqu'à la fin de l'organisation de notre mariage, 
           puis supprimées définitivement de nos systèmes.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">5. Vos droits</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>5. Vos droits</h2>
         <p className="text-gray-700 mb-6">
           Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez le droit de :
         </p>
@@ -501,7 +504,7 @@ const PolitiqueConfidentialite = () => (
           <li>Vous opposer au traitement de vos données</li>
         </ul>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">6. Contact</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>6. Contact</h2>
         <p className="text-gray-700 mb-6">
           Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, 
           vous pouvez nous contacter à :
@@ -526,7 +529,7 @@ const PolitiqueConfidentialite = () => (
 // Conditions générales Component
 const ConditionsGenerales = () => (
   <div className="max-w-4xl mx-auto">
-    <h1 className="text-4xl font-serif text-blue-900 text-center mb-12">Conditions générales</h1>
+    <h1 className="text-4xl font-serif text-center mb-12" style={{ color: '#723d46' }}>Conditions générales</h1>
     
     <div className="bg-white p-8 rounded-lg shadow-lg">
       <div className="prose prose-lg max-w-none">
@@ -534,13 +537,13 @@ const ConditionsGenerales = () => (
           Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">1. Objet</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>1. Objet</h2>
         <p className="text-gray-700 mb-6">
           Les présentes conditions générales régissent l'utilisation de ce site web dédié à notre mariage 
           et les services associés, notamment la confirmation de présence et les informations pratiques.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">2. Utilisation du site</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>2. Utilisation du site</h2>
         <p className="text-gray-700 mb-6">
           Ce site web est destiné exclusivement à nos invités pour :
         </p>
@@ -551,13 +554,13 @@ const ConditionsGenerales = () => (
           <li>Accéder aux détails de l'hébergement</li>
         </ul>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">3. Confirmation de présence</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>3. Confirmation de présence</h2>
         <p className="text-gray-700 mb-6">
           La confirmation de présence via le formulaire en ligne implique l'acceptation de ces conditions générales. 
           Les informations fournies doivent être exactes et complètes.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">4. Hébergement</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>4. Hébergement</h2>
         <p className="text-gray-700 mb-6">
           L'hébergement proposé au Hameau de Valouse est soumis aux conditions suivantes :
         </p>
@@ -568,31 +571,31 @@ const ConditionsGenerales = () => (
           <li>Capacité limitée à 100 personnes</li>
         </ul>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">5. Cagnotte de mariage</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>5. Cagnotte de mariage</h2>
         <p className="text-gray-700 mb-6">
           La participation à notre cagnotte de mariage est entièrement volontaire et ne constitue en aucun cas 
           une obligation pour assister à notre mariage.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">6. Responsabilité</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>6. Responsabilité</h2>
         <p className="text-gray-700 mb-6">
           Nous nous efforçons de fournir des informations exactes et à jour, mais nous ne pouvons garantir 
           l'exhaustivité ou l'exactitude de toutes les informations présentées sur ce site.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">7. Modifications</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>7. Modifications</h2>
         <p className="text-gray-700 mb-6">
           Nous nous réservons le droit de modifier ces conditions générales à tout moment. 
           Les modifications seront publiées sur cette page avec une nouvelle date de mise à jour.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">8. Droit applicable</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>8. Droit applicable</h2>
         <p className="text-gray-700 mb-6">
           Les présentes conditions générales sont soumises au droit français. 
           Tout litige sera soumis à la compétence des tribunaux français.
         </p>
         
-        <h2 className="text-2xl font-serif text-blue-900 mb-4">9. Contact</h2>
+        <h2 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>9. Contact</h2>
         <p className="text-gray-700 mb-6">
           Pour toute question concernant ces conditions générales, vous pouvez nous contacter à :
         </p>
@@ -643,8 +646,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <Heart className="w-8 h-8 text-red-500" />
-              <span className="text-2xl font-serif text-blue-900">J & S</span>
+              <Heart className="w-8 h-8" style={{ color: '#c81315' }} />
+              <span className="text-2xl font-serif" style={{ color: '#723d46' }}>J & S</span>
             </div>
             
             <nav className="hidden lg:flex space-x-6 xl:space-x-8">
@@ -654,11 +657,12 @@ function App() {
                   <button
                     key={item.id}
                     onClick={() => navigate(item.path)}
-                    className={`flex items-center space-x-1 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-300 ${
-                      getActiveSection() === item.id
-                        ? 'bg-blue-900 text-white shadow-lg'
-                        : 'text-blue-900 hover:bg-blue-50 hover:shadow-md'
-                    }`}
+                                          className={`flex items-center space-x-1 xl:space-x-2 px-2 xl:px-4 py-2 rounded-lg transition-all duration-300 ${
+                        getActiveSection() === item.id
+                          ? 'text-white shadow-lg'
+                          : 'hover:shadow-md'
+                      }`}
+                      style={getActiveSection() === item.id ? { backgroundColor: '#723d46' } : { color: '#723d46' }}
                   >
                     <Icon className="w-4 h-4" />
                     <span className="font-medium text-sm xl:text-base">{item.label}</span>
@@ -677,7 +681,8 @@ function App() {
                     navigate(selectedItem.path);
                   }
                 }}
-                className="border border-blue-300 rounded-lg px-3 py-2 text-blue-900 bg-white text-sm sm:text-base"
+                className="border rounded-lg px-3 py-2 bg-white text-sm sm:text-base"
+                style={{ borderColor: '#723d46', color: '#723d46' }}
               >
                 {navigation.map((item) => (
                   <option key={item.id} value={item.id}>
@@ -704,7 +709,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white">
+      <footer className="text-white" style={{ backgroundColor: '#723d46' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid md:grid-cols-3 gap-8 lg:grid-cols-2 lg:max-w-4xl lg:mx-auto">
             {/* Contact Info */}
@@ -713,13 +718,13 @@ function App() {
               <div className="space-y-4">
                 <div>
                   <p className="font-medium">Samuel Rochwerg</p>
-                  <p className="text-blue-200">06 43 86 13 60</p>
-                  <p className="text-blue-200">samuelrochwerg1@gmail.com</p>
+                                <p className="text-gray-200">06 43 86 13 60</p>
+              <p className="text-gray-200">samuelrochwerg1@gmail.com</p>
                 </div>
                 <div>
                   <p className="font-medium">Justine Benhamou Piana</p>
-                  <p className="text-blue-200">07 68 90 67 87</p>
-                  <p className="text-blue-200">justine.benhamou@gmail.com</p>
+                  <p className="text-gray-200">07 68 90 67 87</p>
+                  <p className="text-gray-200">justine.benhamou@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -730,13 +735,13 @@ function App() {
               <div className="space-y-2">
                 <button 
                   onClick={() => navigate('/politique-confidentialite')}
-                  className="block text-blue-200 hover:text-white transition-colors"
+                  className="block text-gray-200 hover:text-white transition-colors"
                 >
                   Politique de confidentialité
                 </button>
                 <button 
                   onClick={() => navigate('/conditions-generales')}
-                  className="block text-blue-200 hover:text-white transition-colors"
+                  className="block text-gray-200 hover:text-white transition-colors"
                 >
                   Conditions générales
                 </button>
@@ -744,11 +749,11 @@ function App() {
             </div>
           </div>
           
-          <div className="border-t border-blue-800 mt-8 pt-8 text-center">
+          <div className="border-t mt-8 pt-8 text-center" style={{ borderColor: '#5a2f37' }}>
             <div className="flex items-center justify-center space-x-2">
-              <Heart className="w-5 h-5 text-red-400" />
-              <p className="text-blue-200">© 2024 Justine & Samuel - Créé avec amour</p>
-              <Heart className="w-5 h-5 text-red-400" />
+              <Heart className="w-5 h-5" style={{ color: '#c81315' }} />
+              <p className="text-gray-200">© 2024 Justine & Samuel - Créé avec amour</p>
+              <Heart className="w-5 h-5" style={{ color: '#c81315' }} />
             </div>
           </div>
         </div>
