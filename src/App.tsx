@@ -440,7 +440,7 @@ const Cagnotte = () => (
       <div className="bg-blue-50 p-8 rounded-lg">
         <h3 className="text-2xl font-serif mb-4" style={{ color: '#723d46' }}>Notre projet</h3>
         <p className="text-gray-700 mb-4">
-          Nous rêvons de partir à l'île Maurice pour notre voyage de noces : plages de sable blanc, lagons turquoise, nature luxuriante et douceur de vivre… Un cadre idyllique pour débuter notre vie de couple marié.
+          Pour notre voyages de noces, nous rêvons d'évasion, de plages de sable blanc et de lagons turquoises... Un cadre idyllique pour débuter notre vie de couple marié. La destination n'est pas encore fixée, mais grâce à votre générosité, nous pourrons vivre une aventure unique.
         </p>
         <img 
           src="/ile-maurice.jpg" 
